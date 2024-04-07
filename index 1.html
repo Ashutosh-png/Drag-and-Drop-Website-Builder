@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Movable Cards</title>
+    <style>
+        .card {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: lightgray;
+            border: 1px solid black;
+            cursor: move;
+        }
+        #navbar {
+            position: absolute;
+            width: 200px;
+            height: 30px;
+            background-color: #333;
+            color: white;
+            padding: 5px;
+            cursor: move;
+        }
+        #card {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: #b39191;
+            color: white;
+            padding: 5px;
+            cursor: move;
+        }
+    </style>
+</head>f
+<body>
+    <div id="InstructionLine"><h1>Try to search card or navbar</h1></div>
+    <input type="text" id="searchInput" placeholder="Search..." oninput="generateElement()">
+    <div id="container">
+        <!-- <div class="card" draggable="true" ondragstart="dragStart(event)"></div>
+        <div class="card" draggable="true" ondragstart="dragStart(event)"></div>
+        <div class="card" draggable="true" ondragstart="dragStart(event)"></div> -->
+    </div>
+    <button   id="download-button"   onclick="downloadHTML()">Download</button>
+    <script src="script.js"></script>
+</body>
+</html>
